@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La pasteleteria</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: rgba(255, 174, 200, 1);
+            padding: 10px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(78, 73, 73);
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 25%;
+            height: 500px;
+            background: rgba(182, 219, 121, 8);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 75%;
+            height: 500px;
+            background-color: #7faeff
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>  <img src="La pasteleteria01.jpg" alt="La pasteleteria" La Pasteleteria
+        height="120"
+        width="120">
+        Pasteleteria</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <h2>
+                  Realice Su pedido
+                  &nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-truck-delivery" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="7" cy="17" r="2" />
+                    <circle cx="17" cy="17" r="2" />
+                    <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
+                    <line x1="3" y1="9" x2="7" y2="9" />
+                  </svg></h2>
+
+                  <label for="nombre">Nombre:</label><br>
+                  <input type="text" id="nombre" name="nombre"><br><br>
+
+                 <label for="tel1">Teléfono:</label><br>
+                 <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+               
+                  <label for="correo1">Ingresa tu correo:</label><br>
+                <input type="email" id="correo1" name="correo1"><br><br>
+               
+                <label for="pastel">Sabor del pastel:</label><br>
+                <input list="pastel">
+                <datalist id="pastel">
+                    <option value="Chocolate">
+                    <option value="Vainilla">
+                    <option value="Fresa">
+                    <option value="Limon">
+                    <option value="Coco">
+                </datalist>
+                <br><br>
+
+                <label for="pastel1">Elige tu topping:</label><br>
+                <input list="pastel1">
+                <datalist id="pastel1">
+                    <option value="Chocolate">
+                    <option value="Vainilla">
+                    <option value="Fresa">
+                    <option value="Frutas">
+                </datalist>
+                <br><br>
+
+
+        </nav>
+
+        <article>
+            <h1><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-egg" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M5.514 14.639c0 3.513 2.904 6.361 6.486 6.361s6.486 -2.848 6.486 -6.361a12.574 12.574 0 0 0 -3.243 -9.012a4.025 4.025 0 0 0 -3.243 -1.627a4.025 4.025 0 0 0 -3.243 1.627a12.574 12.574 0 0 0 -3.243 9.012" />
+              </svg>
+            Nuestra seleccion</h1>
+            <p>En nuestra seleccion de pasteles existe una gran variedad de sabores, colores, adornos, rellenos e incluso podemos agregar aditamentos como velas o adornos  </p>
+
+            <h2><br><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bread" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M17 5a3 3 0 0 1 2 5.235v6.765a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6.764a3 3 0 0 1 1.824 -5.231l.176 -.005h10z" />
+              </svg>
+              Sabores </h2>
+
+             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bread" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7f5345" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M17 5a3 3 0 0 1 2 5.235v6.765a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6.764a3 3 0 0 1 1.824 -5.231l.176 -.005h10z" />
+              </svg>
+              Chocolate
+              &nbsp;
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bread" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M17 5a3 3 0 0 1 2 5.235v6.765a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6.764a3 3 0 0 1 1.824 -5.231l.176 -.005h10z" />
+              </svg>
+              Vainilla
+              &nbsp;
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bread" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M17 5a3 3 0 0 1 2 5.235v6.765a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6.764a3 3 0 0 1 1.824 -5.231l.176 -.005h10z" />
+              </svg>
+              Fresa
+              &nbsp;
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bread" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9de00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M17 5a3 3 0 0 1 2 5.235v6.765a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6.764a3 3 0 0 1 1.824 -5.231l.176 -.005h10z" />
+              </svg>
+              Limon
+              &nbsp;
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bread" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M17 5a3 3 0 0 1 2 5.235v6.765a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6.764a3 3 0 0 1 1.824 -5.231l.176 -.005h10z" />
+              </svg>
+              Coco
+              <br>
+             
+              <br><h3><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-candy" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7.05 11.293l4.243 -4.243a2 2 0 0 1 2.828 0l2.829 2.83a2 2 0 0 1 0 2.828l-4.243 4.243a2 2 0 0 1 -2.828 0l-2.829 -2.831a2 2 0 0 1 0 -2.828z" />
+                <path d="M16.243 9.172l3.086 -.772a1.5 1.5 0 0 0 .697 -2.516l-2.216 -2.217a1.5 1.5 0 0 0 -2.44 .47l-1.248 2.913" />
+                <path d="M9.172 16.243l-.772 3.086a1.5 1.5 0 0 1 -2.516 .697l-2.217 -2.216a1.5 1.5 0 0 1 .47 -2.44l2.913 -1.248" />
+              </svg>
+            Toppings</h3>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-candy" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7f5345" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7.05 11.293l4.243 -4.243a2 2 0 0 1 2.828 0l2.829 2.83a2 2 0 0 1 0 2.828l-4.243 4.243a2 2 0 0 1 -2.828 0l-2.829 -2.831a2 2 0 0 1 0 -2.828z" />
+                <path d="M16.243 9.172l3.086 -.772a1.5 1.5 0 0 0 .697 -2.516l-2.216 -2.217a1.5 1.5 0 0 0 -2.44 .47l-1.248 2.913" />
+                <path d="M9.172 16.243l-.772 3.086a1.5 1.5 0 0 1 -2.516 .697l-2.217 -2.216a1.5 1.5 0 0 1 .47 -2.44l2.913 -1.248" />
+              </svg>
+              Chocolate
+              &nbsp;
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-candy" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7.05 11.293l4.243 -4.243a2 2 0 0 1 2.828 0l2.829 2.83a2 2 0 0 1 0 2.828l-4.243 4.243a2 2 0 0 1 -2.828 0l-2.829 -2.831a2 2 0 0 1 0 -2.828z" />
+                <path d="M16.243 9.172l3.086 -.772a1.5 1.5 0 0 0 .697 -2.516l-2.216 -2.217a1.5 1.5 0 0 0 -2.44 .47l-1.248 2.913" />
+                <path d="M9.172 16.243l-.772 3.086a1.5 1.5 0 0 1 -2.516 .697l-2.217 -2.216a1.5 1.5 0 0 1 .47 -2.44l2.913 -1.248" />
+              </svg>
+              Vainilla
+              &nbsp;
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-candy" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7.05 11.293l4.243 -4.243a2 2 0 0 1 2.828 0l2.829 2.83a2 2 0 0 1 0 2.828l-4.243 4.243a2 2 0 0 1 -2.828 0l-2.829 -2.831a2 2 0 0 1 0 -2.828z" />
+                <path d="M16.243 9.172l3.086 -.772a1.5 1.5 0 0 0 .697 -2.516l-2.216 -2.217a1.5 1.5 0 0 0 -2.44 .47l-1.248 2.913" />
+                <path d="M9.172 16.243l-.772 3.086a1.5 1.5 0 0 1 -2.516 .697l-2.217 -2.216a1.5 1.5 0 0 1 .47 -2.44l2.913 -1.248" />
+              </svg>
+              Fresa
+              &nbsp;
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-candy" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7.05 11.293l4.243 -4.243a2 2 0 0 1 2.828 0l2.829 2.83a2 2 0 0 1 0 2.828l-4.243 4.243a2 2 0 0 1 -2.828 0l-2.829 -2.831a2 2 0 0 1 0 -2.828z" />
+                <path d="M16.243 9.172l3.086 -.772a1.5 1.5 0 0 0 .697 -2.516l-2.216 -2.217a1.5 1.5 0 0 0 -2.44 .47l-1.248 2.913" />
+                <path d="M9.172 16.243l-.772 3.086a1.5 1.5 0 0 1 -2.516 .697l-2.217 -2.216a1.5 1.5 0 0 1 .47 -2.44l2.913 -1.248" />
+              </svg>
+              Frutas
+
+        </article>
+    </section>
+
+    <footer>
+        <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/keogyrep.json"
+    trigger="click"
+    style="width:70px;height:70px">
+</lord-icon>
+               <br> <li><a href="#">Catalogo de pasteles</a></li>
+                <br><li><a href="#">Crea tu propio pastel</a></li>
+                <br><li><a href="#">Quienes somos</a></li>
+            </ul>
+            &nbsp;&nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="12" cy="11" r="3" />
+                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+              </svg>
+              Calle de los pasteles, Ciudad de México, CDMX
+              &nbsp;&nbsp;&nbsp;
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-incoming" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                <line x1="15" y1="9" x2="20" y2="4" />
+                <polyline points="15 5 15 9 19 9" />
+              </svg>
+              55-000-000-000
+    </footer>
+    
+</body>
+
+</html>
